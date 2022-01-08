@@ -15,6 +15,7 @@ function App() {
     "orange", 
     "red"
   ])
+
   let colorMap = colors.map((color, i) => {
     return (
       <ColorBlock key={i} color={color}></ColorBlock>
@@ -24,6 +25,7 @@ function App() {
   let addColor = (newColor) => {
     setColors([...colors, newColor])
   }
+  
   return (
     <div className="App">
       {colorMap}
